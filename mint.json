@@ -19,6 +19,9 @@
       "to": "#F76B8A"
     }
   },
+  "modeToggle": {
+    "default": "dark"
+  },
   "navigation": [
     {
       "group": "Getting Started",
