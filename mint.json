@@ -6,11 +6,21 @@
     "dark": "/logo/dark.svg"
   },
   "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
+  {
+    "colors": {
+      "primary": "#A5374F",
+      "light": "#F76B8A",
+      "dark": "#1E1E1E",
+      "background": {
+        "dark": "#1E1E1E",
+        "light": "#FFFFFF"
+      },
+      "anchors": {
+        "from": "#A5374F",
+        "to": "#F76B8A"
+      }
+    }
+  }
   "navigation": [
     {
       "group": "Getting Started",
