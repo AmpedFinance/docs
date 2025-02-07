@@ -6,21 +6,19 @@
     "dark": "/logo/dark.svg"
   },
   "favicon": "/favicon.svg",
-  {
-    "colors": {
-      "primary": "#A5374F",
-      "light": "#F76B8A",
+  "colors": {
+    "primary": "#A5374F",
+    "light": "#F76B8A",
+    "dark": "#1E1E1E",
+    "background": {
       "dark": "#1E1E1E",
-      "background": {
-        "dark": "#1E1E1E",
-        "light": "#FFFFFF"
-      },
-      "anchors": {
-        "from": "#A5374F",
-        "to": "#F76B8A"
-      }
+      "light": "#FFFFFF"
+    },
+    "anchors": {
+      "from": "#A5374F",
+      "to": "#F76B8A"
     }
-  }
+  },
   "navigation": [
     {
       "group": "Getting Started",
