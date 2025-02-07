@@ -1,101 +1,75 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Amped Finance",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "group": "Trading",
+      "pages": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "group": "Perpetuals and Spot Trading",
+          "pages": [
+            "perpetuals-and-spot-trading/what-is-spot-and-perps-trading",
+            "perpetuals-and-spot-trading/spot-trading-on-amped-finance",
+            "perpetuals-and-spot-trading/perps-trading-on-amped-finance"
+          ]
         }
       ]
+    },
+    {
+      "group": "Protocol Tokens",
+      "pages": [
+        "protocol-tokens/overview",
+        {
+          "group": "AMP Token",
+          "pages": [
+            "protocol-tokens/amp/overview",
+            "protocol-tokens/amp/holding-amp"
+          ]
+        },
+        "protocol-tokens/esamp",
+        "protocol-tokens/alp"
+      ]
+    },
+    {
+      "group": "Platform",
+      "pages": [
+        "amp-tokenomics",
+        "roadmap",
+        "leaderboard",
+        "referrals-program"
+      ]
+    },
+    {
+      "group": "Technical",
+      "pages": [
+        "contract-addresses",
+        "price-feeds",
+        "audit"
+      ]
     }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/ampedfinance",
+    "discord": "https://discord.gg/qzHyknJqAH"
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
   }
 }

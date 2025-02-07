@@ -1,0 +1,82 @@
+---
+title: 'ALP Token'
+description: 'Understanding the Amped Liquidity Pool (ALP) token'
+---
+
+# ALP Token
+
+ALP (Amped Liquidity Pool) serves as the liquidity provider token for the Amped ecosystem.
+
+## Overview
+
+ALP constitutes an index of assets employed in swaps and leveraged trading on Amped. It's minted by using any index asset and can be redeemed by burning for any index asset. The minting and redemption prices are determined by the formula: (total value of assets in the index, including profits and losses of open positions) / (ALP supply).
+
+## Acquiring ALP
+
+1. Visit the Buy page on Amped Finance
+2. Select "Buy" under ALP
+3. Choose your input token from the available index tokens
+4. Enter the desired quantity
+5. Approve and complete the transaction
+
+Your ALP tokens will automatically be staked, initiating:
+- Escrowed AMP (esAMP) rewards accrual
+- ETH rewards accrual
+
+Monitor your rewards on the Earn page.
+
+## Benefits of Holding ALP
+
+Newly minted ALP are automatically staked and provide:
+
+1. **Fee Sharing**
+   - Participate in 70% of all generated protocol fees
+
+2. **Token Rewards**
+   - Earn escrowed AMP (esAMP) tokens
+   - Can be staked for additional rewards
+   - Can be vested to AMP over 12 months
+
+3. **Flexible Exit**
+   - Close positions at any time
+   - Withdraw supplied collateral
+   - Triggers ALP burn mechanism
+
+## Token Pricing
+
+Price considerations include:
+
+1. **Spreads**
+   - Index tokens may incur spreads
+   - Minting uses lower value of index token
+   - Redeeming uses higher value of index token
+   - Stablecoin spread extends from oracle price to 1 USD
+
+2. **Pool Balance**
+   - Price influenced by token spread/weight in pool
+
+## Token Weights
+
+Fees vary based on action impact:
+
+1. **Weight-based Fees**
+   - Higher fees for increasing dominant assets
+   - Lower fees for reducing dominant assets
+   - Visible on Dashboard and ALP buy page
+
+2. **Dynamic Adjustment**
+   - Weights adapt to hedge ALP holders
+   - Based on traders' open positions
+   - Example: High ETH weight during long positions
+
+## Price Protection
+
+1. **Long Positions**
+   - ALP price increases with token prices
+   - Stable USD value for long position reserves
+   - Profits used to pay traders during price increases
+
+2. **Short Positions**
+   - Larger stablecoin weights during shorts
+   - Synthetic exposure to shorted tokens
+   - ALP price moves inversely with shorted assets 

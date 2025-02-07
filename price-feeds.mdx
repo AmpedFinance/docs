@@ -1,0 +1,29 @@
+---
+title: 'Price Feeds'
+description: 'Understanding Amped Finance price feeds and oracles'
+---
+
+# 💹 Price Feeds
+
+Amped Finance utilizes Pyth price feeds deployed on LightLink for each of the assets available on the platform.
+
+## Bridge Contracts
+
+| Ticker | Bridge Contract |
+|--------|----------------|
+| ETH | [0x1936Ed8C4a83D61615Bd05fE0313027C81734dB8](https://phoenix.lightlink.io/address/0x1936Ed8C4a83D61615Bd05fE0313027C81734dB8) |
+| BTC | [0xBf761b73B8cc8aaF309031336572548D66333E81](https://phoenix.lightlink.io/address/0xBf761b73B8cc8aaF309031336572548D66333E81) |
+| BNB | [0x3c795E2b279E91B8f7256158C07Ad1e8ff9e0718](https://phoenix.lightlink.io/address/0x3c795E2b279E91B8f7256158C07Ad1e8ff9e0718) |
+
+## How It Works
+
+1. Bridge contracts use the `latestAnswer` function to fetch prices from the [Pyth price feed contract](https://phoenix.lightlink.io/address/0xA2aa501b19aff244D90cc15a4Cf739D2725B5729)
+
+2. Amped Finance's Vault PriceFeed contract then retrieves the price from the bridge contract using the `latestAnswer` call
+
+## Price Updates
+
+Thanks to LightLink's gasless Enterprise Mode, we can:
+- Frequently refresh prices
+- Keep price data up to date
+- Maintain accuracy without incurring gas fees 

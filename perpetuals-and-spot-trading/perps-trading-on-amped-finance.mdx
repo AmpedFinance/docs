@@ -1,0 +1,105 @@
+---
+title: 'Perpetual Trading on Amped Finance'
+description: 'Learn how to trade perpetuals on Amped Finance'
+---
+
+# Perpetual Trading on Amped Finance
+
+Amped Finance allows you to trade perpetuals in a permissionless, decentralized, and non-custodial way. This tool is currently available on LightLink, and allows you to trade long and short with leverage ranging from 1.10x to 100x on ETH and BTC. You can open positions using collateral such as WBTC, ETH, USDC and USDT.
+
+You only need a cryptocurrency wallet, such as Metamask, Coinbase Wallet, Exodus, Trust Wallet, or WalletConnect, and some ETH to start trading.
+
+## How to Trade Perpetuals
+
+### 1. Connect Your Wallet
+
+To connect your wallet, visit [https://amped.finance/#/trade](https://amped.finance/#/trade) and click on 'Connect wallet'
+
+<Frame>
+  <img src="/images/perps-connect-wallet.png" alt="Connect Wallet" />
+</Frame>
+
+### 2. Opening a Position
+
+To trade an asset:
+1. Click on the pairs displayed at the top left of your screen
+2. Select the asset you want to trade from the dropdown menu
+
+<Frame>
+  <img src="/images/perps-asset-selection.png" alt="Asset Selection" />
+</Frame>
+
+Next, choose your position type:
+
+* **Long Position**: Profit when the token's price increases, loss when it decreases
+* **Short Position**: Profit when the token's price decreases, loss when it increases
+
+<Frame>
+  <img src="/images/perps-position-type.png" alt="Position Type" />
+</Frame>
+
+Select your order type:
+* **Market Order**: Enter position immediately at current market price
+* **Limit Order**: Enter position at your specified price (may not execute immediately)
+
+<Frame>
+  <img src="/images/perps-order-type.png" alt="Order Type" />
+</Frame>
+
+Configure your position:
+1. Select collateral asset
+2. Enter investment amount
+3. Choose leverage level
+
+<Frame>
+  <img src="/images/perps-position-config.png" alt="Position Configuration" />
+</Frame>
+
+### Understanding Fees
+
+There are three types of fees:
+* Opening fees: 0.1% of position size
+* Closing fees: 0.1% of position size
+* Borrowing fees: Charged hourly based on utilization (assets borrowed / total assets in pool * 0.01%)
+
+### Setting Slippage
+
+Slippage tolerance is set to 0.3% by default. To adjust:
+
+1. Click your address in the top right
+2. Select "Settings"
+3. Adjust slippage percentage
+
+<Frame>
+  <img src="/images/perps-slippage.png" alt="Slippage Settings" />
+</Frame>
+
+### Position Management
+
+Monitor your positions below the chart in the 'Position' section. You can:
+* View position details on the chart
+* Add/remove collateral
+* Add trailing stops
+* Set Stop Loss/Take Profit orders
+
+<Frame>
+  <img src="/images/perps-position-management.png" alt="Position Management" />
+</Frame>
+
+### Closing Positions
+
+You have three options to close positions:
+
+1. **Complete Close**: Click 'Max' and confirm
+2. **Partial Close**: Enter the amount to withdraw
+3. **Stop Loss/Take Profit**: Set trigger prices for automated closing
+
+<Frame>
+  <img src="/images/perps-close-position.png" alt="Close Position" />
+</Frame>
+
+### Partial Liquidations
+
+The Liquidation Price is the price at which your collateral minus losses and borrow fees falls below 1% of your position size. Monitor this carefully as it changes over time due to borrow fees, especially with high leverage positions held for extended periods.
+
+If liquidation occurs, any remaining collateral after deducting losses and fees will be returned to your wallet. 
