@@ -1,32 +1,35 @@
-# Mintlify Starter Kit
+# Amped Finance Documentation
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+This repository contains the official documentation for Amped Finance, a decentralized perpetual and spot trading platform on LightLink.
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## Structure
 
-### Development
+- `introduction.mdx` - Main landing page and introduction
+- `perpetuals-and-spot-trading/` - Trading documentation
+- `protocol-tokens/` - Token documentation (AMP, esAMP, ALP)
+- `images/` - Documentation images and assets
+- `docs.json` - Mintlify configuration
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## Local Development
 
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where docs.json is)
-
-```
-mintlify dev
+1. Install dependencies:
+```bash
+npm install
 ```
 
-### Publishing Changes
+2. Start the development server:
+```bash
+npx mintlify dev
+```
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+## Contributing
 
-#### Troubleshooting
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+## License
+
+Copyright © 2024 Amped Finance

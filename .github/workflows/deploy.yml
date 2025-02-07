@@ -1,0 +1,27 @@
+name: Deploy to Mintlify
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Mintlify
+        run: npm i -g mintlify
+
+      - name: Build documentation
+        run: cd docs && mintlify build
+
+      - name: Deploy to Mintlify
+        env:
+          MINTLIFY_TOKEN: ${{ secrets.MINTLIFY_TOKEN }}
+        run: cd docs && mintlify deploy 
