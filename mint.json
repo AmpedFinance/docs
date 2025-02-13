@@ -30,6 +30,13 @@
       ]
     },
     {
+      "group": "Providing Liquidity",
+      "pages": [
+        "providing-liquidity/providing-liquidity-overview",
+        "providing-liquidity/alp-rewards"
+      ]
+    },
+    {
       "group": "Trading",
       "pages": [
         {
