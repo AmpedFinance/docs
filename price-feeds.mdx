@@ -5,25 +5,48 @@ description: 'Understanding Amped Finance price feeds and oracles'
 
 # 💹 Price Feeds
 
-Amped Finance utilizes Pyth price feeds deployed on LightLink for each of the assets available on the platform.
+Amped Finance utilizes price feeds deployed on multiple networks for each of the assets available on the platform.
 
-## Bridge Contracts
+## LightLink Phoenix Price Feeds
 
-| Ticker | Bridge Contract |
-|--------|----------------|
-| ETH | [0x1936Ed8C4a83D61615Bd05fE0313027C81734dB8](https://phoenix.lightlink.io/address/0x1936Ed8C4a83D61615Bd05fE0313027C81734dB8) |
-| BTC | [0xBf761b73B8cc8aaF309031336572548D66333E81](https://phoenix.lightlink.io/address/0xBf761b73B8cc8aaF309031336572548D66333E81) |
-| BNB | [0x3c795E2b279E91B8f7256158C07Ad1e8ff9e0718](https://phoenix.lightlink.io/address/0x3c795E2b279E91B8f7256158C07Ad1e8ff9e0718) |
+| Token | Price Feed Contract |
+|-------|-------------------|
+| USDT | [0xC46D756E8346F3d0Fe1c8eEff6A8C98cf7359594](https://phoenix.lightlink.io/address/0xC46D756E8346F3d0Fe1c8eEff6A8C98cf7359594) |
+| USDC | [0x51CDDB90f73bA3176652A185A398Ba9767E7251A](https://phoenix.lightlink.io/address/0x51CDDB90f73bA3176652A185A398Ba9767E7251A) |
+| USDT.sg | [0xC46D756E8346F3d0Fe1c8eEff6A8C98cf7359594](https://phoenix.lightlink.io/address/0xC46D756E8346F3d0Fe1c8eEff6A8C98cf7359594) |
+| USDC.e | [0x51CDDB90f73bA3176652A185A398Ba9767E7251A](https://phoenix.lightlink.io/address/0x51CDDB90f73bA3176652A185A398Ba9767E7251A) |
+| LL | [0x4ef96D36D83bc21b8f1877Ee7fC74054988543Dd](https://phoenix.lightlink.io/address/0x4ef96D36D83bc21b8f1877Ee7fC74054988543Dd) |
+| WBNB | [0x01Ef273892cbbE372a82e41f3589eDb3bC50dCC6](https://phoenix.lightlink.io/address/0x01Ef273892cbbE372a82e41f3589eDb3bC50dCC6) |
+| WETH | [0x1D43b5AF748ddf9C8114133837FE304Cf6f90d61](https://phoenix.lightlink.io/address/0x1D43b5AF748ddf9C8114133837FE304Cf6f90d61) |
+| WBTC | [0xAB95Db4B4FF0cc696562B81AddCB6ce36768f9F8](https://phoenix.lightlink.io/address/0xAB95Db4B4FF0cc696562B81AddCB6ce36768f9F8) |
+
+## Sonic Chain Price Feeds
+
+| Token | Price Feed Contract |
+|-------|-------------------|
+| USDC | [0x30c1322F695c4E16393b46b339bB6Aa6cAcA5784](https://explorer.sonic.org/address/0x30c1322F695c4E16393b46b339bB6Aa6cAcA5784) |
+| WS | [0x15F38d12940e9c9F94e59419eBa636cA7Ecdff04](https://explorer.sonic.org/address/0x15F38d12940e9c9F94e59419eBa636cA7Ecdff04) |
+| WETH | [0x53C0d2dC16d400A94d054E2dD5D0Dc216472173D](https://explorer.sonic.org/address/0x53C0d2dC16d400A94d054E2dD5D0Dc216472173D) |
+| ANON | [0xea13718A6955bd2dc3F261351F1Fda78aB74E25D](https://explorer.sonic.org/address/0xea13718A6955bd2dc3F261351F1Fda78aB74E25D) |
+
+## Berachain Price Feeds
+
+| Token | Price Feed Contract |
+|-------|-------------------|
+| HONEY | [0x406a4A676b84F90B6Bd05ae0e80c002DD5879415](https://explorer.berachain.com/address/0x406a4A676b84F90B6Bd05ae0e80c002DD5879415) |
+| EURC | [0x2bfd532526BA01D15be22cb707CE844c355aeA72](https://explorer.berachain.com/address/0x2bfd532526BA01D15be22cb707CE844c355aeA72) |
+| WBERA | [0xE0E67E0D8280F4bECBa10B7C7aBb290436d16DF7](https://explorer.berachain.com/address/0xE0E67E0D8280F4bECBa10B7C7aBb290436d16DF7) |
+| WETH | [0xA37E9f870c273205666199c11E0B640f1D665C95](https://explorer.berachain.com/address/0xA37E9f870c273205666199c11E0B640f1D665C95) |
 
 ## How It Works
 
-1. Bridge contracts use the `latestAnswer` function to fetch prices from the [Pyth price feed contract](https://phoenix.lightlink.io/address/0xA2aa501b19aff244D90cc15a4Cf739D2725B5729)
+1. Price feed contracts provide real-time price data for each supported asset through the `latestAnswer` function
 
-2. Amped Finance's Vault PriceFeed contract then retrieves the price from the bridge contract using the `latestAnswer` call
+2. Amped Finance's Vault PriceFeed contract retrieves the price from the respective price feed contract using the `latestAnswer` call
 
 ## Price Updates
 
-Thanks to LightLink's gasless Enterprise Mode, we can:
+Thanks to the efficiency of our supported networks, we can:
 - Frequently refresh prices
 - Keep price data up to date
-- Maintain accuracy without incurring gas fees 
+- Maintain accuracy with minimal gas costs 
