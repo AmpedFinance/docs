@@ -1,0 +1,129 @@
+---
+title: Simple Token Chart
+description: A simple HTML/CSS visualization of token distribution
+---
+
+<div style={{ width: '100%', padding: '20px', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+  <h3 style={{ textAlign: 'center', marginBottom: '20px' }}>Amped Finance Token Distribution Timeline (100M Tokens)</h3>
+  
+  <div style={{ display: 'flex', height: '250px', position: 'relative', marginBottom: '30px', borderBottom: '1px solid #ddd' }}>
+    {/* Protocol Incentives (28%) */}
+    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '70px', backgroundColor: '#bc5090', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '5px', left: '10px', fontSize: '12px', color: 'white' }}>Protocol Incentives (28%)</div>
+    </div>
+    
+    {/* Reserve (11%) */}
+    <div style={{ position: 'absolute', bottom: '70px', left: 0, right: 0, height: '27.5px', backgroundColor: '#ff6361', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '5px', left: '10px', fontSize: '12px', color: 'white' }}>Reserve (11%)</div>
+    </div>
+    
+    {/* Liquidity (15%) */}
+    <div style={{ position: 'absolute', bottom: '97.5px', left: 0, right: 0, height: '37.5px', backgroundColor: '#ff8042', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '5px', left: '10px', fontSize: '12px', color: 'white' }}>Liquidity (15%)</div>
+    </div>
+    
+    {/* Rewards (5%) */}
+    <div style={{ position: 'absolute', bottom: '135px', left: 0, right: 0, height: '12.5px', backgroundColor: '#ffc658', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '0px', left: '10px', fontSize: '10px', color: 'black' }}>Rewards (5%)</div>
+    </div>
+    
+    {/* Team (9%) */}
+    <div style={{ position: 'absolute', bottom: '147.5px', left: 0, right: 0, height: '22.5px', backgroundColor: '#d0ed57', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '5px', left: '10px', fontSize: '10px', color: 'black' }}>Team (9%)</div>
+    </div>
+    
+    {/* Advisors (2%) */}
+    <div style={{ position: 'absolute', bottom: '170px', left: 0, right: 0, height: '5px', backgroundColor: '#a4de6c', borderRadius: '4px 4px 0 0' }}>
+    </div>
+    
+    {/* Public (8%) */}
+    <div style={{ position: 'absolute', bottom: '175px', left: 0, right: 0, height: '20px', backgroundColor: '#82ca9d', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '3px', left: '10px', fontSize: '10px', color: 'black' }}>Public (8%)</div>
+    </div>
+    
+    {/* KOL (5%) */}
+    <div style={{ position: 'absolute', bottom: '195px', left: 0, right: 0, height: '12.5px', backgroundColor: '#8dd1e1', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '0px', left: '10px', fontSize: '10px', color: 'black' }}>KOL (5%)</div>
+    </div>
+    
+    {/* Private (7%) */}
+    <div style={{ position: 'absolute', bottom: '207.5px', left: 0, right: 0, height: '17.5px', backgroundColor: '#83a6ed', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '3px', left: '10px', fontSize: '10px', color: 'black' }}>Private (7%)</div>
+    </div>
+    
+    {/* LightLink Foundation (10%) */}
+    <div style={{ position: 'absolute', bottom: '225px', left: 0, right: 0, height: '25px', backgroundColor: '#8884d8', borderRadius: '4px 4px 0 0' }}>
+      <div style={{ position: 'absolute', bottom: '5px', left: '10px', fontSize: '10px', color: 'white' }}>LightLink Foundation (10%)</div>
+    </div>
+    
+    {/* Timeline indicators */}
+    <div style={{ position: 'absolute', bottom: '-20px', left: '0%', fontSize: '10px' }}>Launch</div>
+    <div style={{ position: 'absolute', bottom: '-20px', left: '20%', fontSize: '10px' }}>6M</div>
+    <div style={{ position: 'absolute', bottom: '-20px', left: '40%', fontSize: '10px' }}>1Y</div>
+    <div style={{ position: 'absolute', bottom: '-20px', left: '60%', fontSize: '10px' }}>2Y</div>
+    <div style={{ position: 'absolute', bottom: '-20px', left: '80%', fontSize: '10px' }}>3Y</div>
+    <div style={{ position: 'absolute', bottom: '-20px', right: '0', fontSize: '10px' }}>5Y+</div>
+  </div>
+  
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '10px', marginTop: '30px' }}>
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #8884d8', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>LightLink Foundation</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>10.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>10.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #83a6ed', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Private</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>7.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>7.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #8dd1e1', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>KOL</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>5.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>5.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #82ca9d', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Public</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>8.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>8.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #a4de6c', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Advisors</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>2.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>2.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #d0ed57', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Team</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>9.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>9.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #ffc658', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Rewards</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>5.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>5.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #ff8042', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Liquidity</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>15.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>15.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #ff6361', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Reserve</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>11.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>11.0% of total</div>
+    </div>
+    
+    <div style={{ border: '1px solid #ddd', borderLeft: '4px solid #bc5090', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ fontWeight: 'bold', fontSize: '12px' }}>Protocol Incentives</div>
+      <div style={{ fontSize: '16px', fontWeight: 'bold' }}>28.0M</div>
+      <div style={{ fontSize: '10px', color: '#666' }}>28.0% of total</div>
+    </div>
+  </div>
+</div> 

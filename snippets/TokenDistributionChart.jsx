@@ -1,3 +1,4 @@
+// components/TokenDistributionChart.jsx
 import React, { useState, useEffect } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -290,22 +291,12 @@ const DISTRIBUTION_DATA = [
   }
 ];
 
-interface CategoryColors {
-  [key: string]: string;
-}
-
-interface ChartDataPoint {
-  day: number;
-  dayLabel: string;
-  [key: string]: number | string;
-}
-
 const TokenDistributionChart = () => {
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState([]);
 
   // Color palette for token categories
-  const categoryColors: CategoryColors = {
+  const categoryColors = {
     "LightLink Foundation": "#8884d8",
     "Private": "#83a6ed",
     "KOL": "#8dd1e1",
@@ -331,20 +322,20 @@ const TokenDistributionChart = () => {
     }
   }, []);
 
-  const formatYAxis = (value: number): string => {
+  const formatYAxis = (value) => {
     if (value === 0) return '0';
     if (value < 1000000) return `${(value / 1000).toFixed(0)}K`;
     return `${(value / 1000000).toFixed(1)}M`;
   };
 
-  const tooltipFormatter = (value: number, name: string) => {
+  const tooltipFormatter = (value, name) => {
     return [`${Math.round(value).toLocaleString()} tokens`, name];
   };
 
-  const customTooltip = ({ active, payload, label }: any) => {
+  const customTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       // Calculate the true total by summing all category values
-      const totalTokens = Math.round(payload.reduce((sum: number, entry: any) => sum + (entry.value || 0), 0));
+      const totalTokens = Math.round(payload.reduce((sum, entry) => sum + (entry.value || 0), 0));
       const percentage = totalTokens / 100000000 * 100;
       
       return (
@@ -354,7 +345,7 @@ const TokenDistributionChart = () => {
           <p className="text-sm text-gray-600">{`(${percentage.toFixed(2)}% of 100M)`}</p>
           <hr className="my-2" />
           <div>
-            {payload.map((entry: any, index: number) => (
+            {payload.map((entry, index) => (
               <div key={`item-${index}`} className="flex items-center py-1">
                 <div 
                   className="w-3 h-3 mr-2" 
@@ -434,8 +425,8 @@ const TokenDistributionChart = () => {
       <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-3">
         {categories.map(category => {
           // Find final allocation for this category (last data point)
-          const finalAllocation = Math.round(data[data.length - 1]?.[category] as number || 0);
-          const total = categories.reduce((sum, cat) => sum + Math.round(data[data.length - 1]?.[cat] as number || 0), 0);
+          const finalAllocation = Math.round(data[data.length - 1]?.[category] || 0);
+          const total = categories.reduce((sum, cat) => sum + Math.round(data[data.length - 1]?.[cat] || 0), 0);
           
           return (
             <div 
