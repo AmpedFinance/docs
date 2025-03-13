@@ -22,6 +22,14 @@
   "modeToggle": {
     "default": "dark"
   },
+  "reactStrictMode": true,
+  "integrations": {
+    "mdx": {
+      "rehypePlugins": [
+        ["rehype-external-links", { "target": "_blank", "rel": ["nofollow"] }]
+      ]
+    }
+  },
   "navigation": [
     {
       "group": "Getting Started",
