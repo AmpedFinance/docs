@@ -75,7 +75,6 @@
     {
       "group": "Platform",
       "pages": [
-        "amp-tokenomics",
         "roadmap",
         "leaderboard",
         "referrals-program"
