@@ -15,6 +15,54 @@ ALP (Amped Liquidity Provider) token represents your share in the protocol's liq
 
 * Are specific to each network (e.g., Berachain ALP, Lightlink ALP)
 
+## How the Liquidity Pool Works
+
+The ALP pool is a single, aggregated liquidity pool that:
+
+* **Acts as Counterparty**: Serves as the counterparty to all trades on the platform
+
+* **Multi-Asset Index**: Contains a basket of whitelisted assets used for trading
+
+* **Dynamic Rebalancing**: Automatically adjusts composition based on market conditions
+
+* **Oracle Pricing**: Uses external price feeds to ensure accurate valuations
+
+When traders profit, the pool pays out (decreasing ALP value). When traders lose, the pool gains (increasing ALP value). This design enables:
+
+* Zero price impact for large trades
+
+* Deep liquidity for all supported assets
+
+* Efficient capital utilization
+
+## Benefits for Liquidity Providers
+
+### 1. **Fee Revenue (70% of Protocol Fees)**
+
+* Swap fees from spot trading
+
+* Open/close fees from leveraged positions
+
+* Liquidation fees from margin calls
+
+* Borrowing fees from leveraged trades
+
+### 2. **Token Rewards**
+
+* Earn escrowed AMP (esAMP) tokens
+
+* Accumulate rewards that can be vested to AMP
+
+* Participate in governance through earned tokens
+
+### 3. **Advanced Features**
+
+* **yALP Vault Option**: Auto-compound your rewards through the yALP vault
+
+* **Multi-Chain Opportunities**: Deploy liquidity across different networks
+
+* **Risk Management**: Pool automatically hedges based on trader positions
+
 ## Available Networks and Tokens
 
 Different networks support different tokens for liquidity provision. Here's what you can deposit on each network:
@@ -111,6 +159,26 @@ Different networks support different tokens for liquidity provision. Here's what
 
        ![](/earn-dash.png)
 
+## Risk Management
+
+The ALP pool employs sophisticated mechanisms to protect liquidity providers:
+
+### **Market Condition Adaptations**
+
+* **Bull Markets**: Reduces stablecoin exposure, increases crypto asset allocation
+
+* **Bear Markets**: Increases stablecoin allocation for stability
+
+* **High Volatility**: Adjusts fees dynamically to manage risk
+
+### **Position Hedging**
+
+* Pool composition automatically adjusts based on trader open interest
+
+* Higher weights in assets with net long positions
+
+* Increased stablecoin allocation when shorts dominate
+
 ## Important Considerations
 
 * The value of ALP tokens can fluctuate based on:
@@ -123,10 +191,16 @@ Different networks support different tokens for liquidity provision. Here's what
 
   * Token price movements
 
+  * Trader profit/loss outcomes
+
 * Liquidity provision involves risks, including potential impermanent loss
 
 * Different networks may have different minimum deposit requirements
 
 * Gas fees vary by network
 
+* Consider using the yALP vault for automated reward compounding
+
 For details about rewards and earnings, please see the [ALP Rewards](/providing-liquidity/alp-rewards) section.
+
+For comprehensive technical details about the liquidity pool mechanics, refer to our [Whitepaper](https://amped.finance/#/whitepaper).

@@ -3,20 +3,86 @@ title: 'Security Audit'
 description: 'Amped Finance smart contract audit report'
 ---
 
-# 🔬 Audit
+# 🔬 Security
 
-The Amped Finance contracts are a fork of GMX's repository with some minor modifications. The audit report has been compiled after a thorough review from the Block Apex team.
+Security is of paramount importance to Amped Finance. As a DeFi platform handling significant user funds and executing complex financial contracts, Amped employs a multi-layered security strategy.
 
-The contracts that the protocol is operating from are from the same commit hash as reviewed, and can be found in our [contract addresses](/contract-addresses) page.
+## Audited, Proven Codebase
+
+The Amped Finance contracts are a fork of GMX v1's repository with minimal modifications. By starting from this reliable code foundation, which has been extensively audited and battle-tested on mainnet, Amped reduced the risk of introducing new vulnerabilities.
 
 <Card title="Download Audit Report" icon="file-pdf" href="https://github.com/BlockApex/Audit-Reports/blob/master/Amped%20Finance%20Final%20Audit%20Report.pdf">
   Block Apex Final Audit Report
 </Card>
 
+The contracts that the protocol is operating from are from the same commit hash as reviewed, and can be found in our [contract addresses](/contract-addresses) page.
+
+## Security Features
+
+### **Inherited from GMX**
+- **Capped Asset Exposure**: Controlled asset weights prevent overexposure
+- **Trustless Oracles**: Decentralized price feeds prevent manipulation
+- **Collateral & Liquidation**: Clear rules for margin maintenance
+- **Reentrancy Guards**: Protection against reentrancy attacks
+- **Access Control**: Critical functions restricted to authorized addresses
+
+### **yALP Vault Security**
+- **Dilution Protection**: Pre-deposit calculations prevent exploitation
+- **Cooldown Respect**: Maintains underlying protocol protections
+- **Comprehensive Testing**: Extensive testing before deployment
+- **Regular Audits**: Ongoing security reviews
+
+### **Protocol Safeguards**
+- **Oracle Sanity Checks**: Validates price feed data
+- **Rate Limits**: Prevents certain attack vectors
+- **Time Locks**: Governance changes subject to delays
+- **Multi-sig Controls**: Critical operations require multiple signatures
+
+## Open Source Transparency
+
+Amped maintains an open-source approach:
+- Smart contract code published and verified on blockchain explorers
+- Community audits and feedback encouraged
+- Bug bounty programs for responsible disclosure
+- Transparent governance processes
+
+## Ongoing Monitoring
+
+### **Real-Time Monitoring**
+- Position and liquidity tracking
+- Automated alerts for unusual activities
+- 24/7 system monitoring
+- Rapid incident response procedures
+
+### **Risk Management**
+- Large position monitoring
+- Open interest tracking
+- Intervention capabilities via governance
+- Regular security assessments
+
+## Upgrade Security
+
+When introducing new features:
+- **Modular Deployment**: New features as separate modules
+- **Limited Blast Radius**: Isolated risk for new components
+- **Community Review**: Time-locked upgrades for transparency
+- **Thorough Testing**: Comprehensive testing before deployment
+
+## Security Best Practices
+
+- Regular third-party audits
+- Continuous code review
+- Active bug bounty program
+- Security-first development culture
+- Community involvement in security
+
 ## Key Points
 
-- Contracts forked from GMX
+- Contracts forked from battle-tested GMX v1
 - Minimal modifications to core functionality
 - Full audit by Block Apex team
 - Deployed contracts match audited code
-- Report available for public review 
+- Ongoing security monitoring and improvements
+- Multi-layered security approach
+
+For more details about our security architecture and practices, refer to our [Whitepaper](https://amped.finance/#/whitepaper). 

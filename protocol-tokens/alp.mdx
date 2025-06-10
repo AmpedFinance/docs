@@ -5,11 +5,17 @@ description: 'Understanding the Amped Liquidity Pool (ALP) token'
 
 # ALP Token
 
-ALP (Amped Liquidity Pool) serves as the liquidity provider token for the Amped ecosystem.
+ALP (Amped Liquidity Pool) serves as the liquidity provider token for the Amped ecosystem. It represents a share in a single, aggregated liquidity pool that supports all trading on the platform.
 
 ## Overview
 
 ALP constitutes an index of assets employed in swaps and leveraged trading on Amped. It's minted by using any index asset and can be redeemed by burning for any index asset. The minting and redemption prices are determined by the formula: (total value of assets in the index, including profits and losses of open positions) / (ALP supply).
+
+### Key Design Features
+- **Single Unified Pool**: All trades are backed by one aggregated liquidity pool
+- **Multi-Asset Index**: Supports a diverse array of collateral assets
+- **Counterparty to Traders**: The pool acts as the counterparty to all positions
+- **Oracle-Driven Pricing**: Uses external oracles for accurate, manipulation-resistant pricing
 
 ## Acquiring ALP
 
@@ -31,6 +37,7 @@ Newly minted ALP are automatically staked and provide:
 
 1. **Fee Sharing**
    - Participate in 70% of all generated protocol fees
+   - Includes swap fees, leverage trading fees, and liquidation fees
 
 2. **Token Rewards**
    - Earn escrowed AMP (esAMP) tokens
@@ -41,6 +48,46 @@ Newly minted ALP are automatically staked and provide:
    - Close positions at any time
    - Withdraw supplied collateral
    - Triggers ALP burn mechanism
+
+## yALP: Auto-Compounding Vault
+
+Amped introduces yALP, a yield-bearing vault that revolutionizes how liquidity providers earn:
+
+### What is yALP?
+- An ERC-4626 compliant tokenized vault
+- Automatically compounds ALP rewards
+- Represents a share of staked and compounding ALP
+- Freely transferable unlike staked ALP
+
+### Key Benefits
+1. **Hands-Off Compounding**: Vault automatically harvests and reinvests rewards
+2. **Gas Efficiency**: Consolidates compounding into aggregated transactions
+3. **Transferable Liquidity**: yALP tokens can be traded or used as collateral
+4. **Fair Accounting**: Uses pre-deposit calculations to prevent exploitation
+
+### How It Works
+- Deposit ALP → Receive yALP
+- yALP/ALP exchange rate increases over time as rewards compound
+- Withdraw anytime by burning yALP for ALP
+
+## Advanced Liquidity Management
+
+The ALP pool employs sophisticated mechanisms that adapt to market conditions:
+
+### Bull Market Optimization
+- Reduces stablecoin exposure
+- Increases allocation to appreciating assets
+- Allows LPs to benefit from market growth
+
+### Bear Market Protection
+- Increases stablecoin allocation
+- Reduces volatile asset exposure
+- Protects pool from excessive drawdowns
+
+### Dynamic Fee Adjustment
+- Real-time fee adjustments based on asset utilization
+- Higher fees for high-demand assets
+- Lower fees for underutilized assets
 
 ## Token Pricing
 
@@ -79,4 +126,13 @@ Fees vary based on action impact:
 2. **Short Positions**
    - Larger stablecoin weights during shorts
    - Synthetic exposure to shorted tokens
-   - ALP price moves inversely with shorted assets 
+   - ALP price moves inversely with shorted assets
+
+## Risk Considerations
+
+- Value can fluctuate based on protocol performance and market conditions
+- Exposure to impermanent loss
+- Subject to trader PnL (pool pays winning traders, collects from losing traders)
+- Different risk profiles across different network deployments
+
+For more details about the technical implementation and security features, refer to our [Whitepaper](https://amped.finance/#/whitepaper). 

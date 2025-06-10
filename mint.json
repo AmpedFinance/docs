@@ -69,15 +69,21 @@
           ]
         },
         "protocol-tokens/esamp",
-        "protocol-tokens/alp"
+        "protocol-tokens/alp",
+        "protocol-tokens/yalp"
       ]
     },
     {
       "group": "Platform",
       "pages": [
         "roadmap",
-        "leaderboard",
         "referrals-program"
+      ]
+    },
+    {
+      "group": "AI & Innovation",
+      "pages": [
+        "ai-integration"
       ]
     },
     {

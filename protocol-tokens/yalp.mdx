@@ -1,0 +1,133 @@
+---
+title: 'yALP Vault'
+description: 'Understanding the yield-bearing auto-compounding ALP vault'
+---
+
+# yALP Vault: Yield-Bearing Auto-Compounding ALP
+
+One of Amped's innovative enhancements is yALP, a yield-bearing vault that revolutionizes how liquidity providers earn on the platform.
+
+## Concept and Mechanism
+
+yALP is essentially a smart vault that wraps ALP into an interest-accruing token. When a user deposits ALP tokens into the vault, they receive yALP tokens in exchange, which represent a share of the vault's assets. 
+
+### How It Works
+- The vault stakes the deposited ALP internally
+- Automatically claims and compounds rewards on behalf of users
+- The amount of ALP backing each yALP token grows over time
+- The exchange rate between yALP and ALP increases with each compound event
+
+## EIP-4626 Standard Compliance
+
+yALP adheres to the ERC-4626 tokenized vault standard, bringing several advantages:
+
+### **Composability**
+Any DeFi protocol that recognizes the EIP-4626 interface can easily integrate yALP. For example, yALP tokens could potentially be used as collateral in lending platforms or be added to yield aggregators.
+
+### **Standardized Functions**
+The vault exposes familiar methods like:
+- `deposit()` and `withdraw()`
+- `totalAssets()` 
+- Conversion functions between shares (yALP) and assets (ALP)
+
+### **Predictable Accounting**
+The standard enforces precise mathematical relationships between shares and underlying assets, ensuring fair and transparent accounting.
+
+## Key Benefits for Liquidity Providers
+
+### **1. Hands-Off Compounding**
+- Vault automatically harvests rewards on a regular schedule
+- Trading fees and earned esAMP are periodically claimed
+- Rewards are converted back into additional ALP
+- No manual actions required - true "set and forget"
+
+### **2. Operational Efficiency**
+- Consolidates compounding into aggregated transactions
+- Reduces overall gas costs
+- Small holders get same compounding rate as large holders
+- More efficient than individual manual compounding
+
+### **3. Transferable Liquidity**
+Unlike staked ALP, yALP tokens are:
+- Standard ERC-20 tokens
+- Freely transferable between wallets
+- Tradeable on exchanges
+- Usable as collateral in other protocols
+- No cooldown periods for transfers
+
+### **4. Transparent Tracking**
+- Current exchange rate (ALP per yALP) always visible
+- Fair share accounting prevents dilution
+- Anti-exploitation mechanisms built in
+- Real-time value tracking
+
+### **5. Secondary Market Price Discovery**
+- Market prices yALP based on intrinsic value
+- Expected future yield factored into pricing
+- Arbitrage opportunities between minting/burning and market trading
+- Enhanced liquidity for LP positions
+
+## Technical Implementation
+
+The yALP vault is carefully implemented with security and efficiency in mind:
+
+### **Security Features**
+- Reentrancy guards on all state-changing functions
+- Pre-deposit share calculation to prevent manipulation
+- Respects underlying ALP cooldown rules
+- Regular security audits
+
+### **Keeper Bot System**
+- Automated keeper bot triggers compound function
+- Claims all accumulated rewards
+- Redeposits rewards to mint more ALP
+- Operates on optimized schedule for gas efficiency
+
+### **Integration Points**
+- Seamlessly integrates with existing Amped contracts
+- Maintains compatibility with reward distribution
+- Preserves all ALP staking benefits
+
+## How to Use yALP
+
+### **Depositing**
+1. Acquire ALP tokens through normal liquidity provision
+2. Navigate to the yALP vault interface
+3. Enter amount of ALP to deposit
+4. Approve and confirm transaction
+5. Receive yALP tokens representing your share
+
+### **Monitoring**
+- Track your yALP balance
+- View current ALP/yALP exchange rate
+- Monitor accumulated rewards
+- Calculate your total position value
+
+### **Withdrawing**
+1. Navigate to withdrawal interface
+2. Enter amount of yALP to burn
+3. Confirm transaction
+4. Receive underlying ALP plus accumulated rewards
+
+## Use Cases
+
+### **Long-Term Holders**
+Perfect for LPs who want to maximize returns without active management
+
+### **DeFi Integration**
+Use yALP as collateral or integrate with other yield strategies
+
+### **Liquidity Provision**
+Trade yALP tokens without unstaking or waiting periods
+
+### **Institutional Users**
+Simplified accounting and transferability for larger positions
+
+## Important Considerations
+
+- yALP value only increases relative to ALP (never decreases)
+- Underlying ALP risks still apply
+- Gas costs for deposits/withdrawals
+- Smart contract risk (though audited and tested)
+
+For more technical details about the yALP implementation and security features, refer to our [Whitepaper](https://amped.finance/#/whitepaper). 
