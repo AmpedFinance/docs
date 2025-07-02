@@ -65,6 +65,7 @@
           "group": "AMP Token",
           "pages": [
             "protocol-tokens/amp/overview",
+            "protocol-tokens/amp/tokenomics",
             "protocol-tokens/amp/holding-amp"
           ]
         },
