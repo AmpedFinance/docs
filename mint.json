@@ -62,7 +62,7 @@
       "pages": [
         "protocol-tokens/overview",
         {
-          "group": "AMP Token",
+          "group": "AMPED Token",
           "pages": [
             "protocol-tokens/amp/overview",
             "protocol-tokens/amp/tokenomics",
