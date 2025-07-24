@@ -64,9 +64,9 @@
         {
           "group": "AMPED Token",
           "pages": [
-            "protocol-tokens/amp/overview",
-            "protocol-tokens/amp/tokenomics",
-            "protocol-tokens/amp/holding-amp"
+            "protocol-tokens/amped/overview",
+            "protocol-tokens/amped/tokenomics",
+            "protocol-tokens/amped/holding-amp"
           ]
         },
         "protocol-tokens/esamp",
