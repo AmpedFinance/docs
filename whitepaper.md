@@ -23,7 +23,7 @@ their contributions of providing liquidity to facilitate swaps. Amped
 extends this model by introducing yALP, a yield-bearing vault that
 automatically compounds rewards for ALP holders based on their
 self-selected strategies, further lowering the barriers for users. The
-platform\'s native token AMP is central to governance and incentive
+platform\'s native token AMPED is central to governance and incentive
 alignment, enabling holders to stake to participate in various features
 of the platform and receive rewards for active engagement. With a
 forward-looking roadmap that integrates artificial intelligence
@@ -166,7 +166,7 @@ collected by the protocol and periodically distributed to stakeholders.
 A portion of fees (traditionally 70%) goes to liquidity providers (ALP
 stakers), and the rest (30%) to active users which engage with the
 platform (e.g. for trading). Fees are distributed in key assets and as
-escrowed tokens (esAMP) which vest into real AMP over time. This aligns
+escrowed tokens (esAMP) which vest into real AMPED over time. This aligns
 incentives by rewarding all contribution which is beneficial for the
 ecosystem, such as liquidity provision, governance participation and
 engaging in trades or participating in platform campaigns.
@@ -245,15 +245,15 @@ provide a smooth and professional experience.
 
 Amped\'s tokenomics ensure that active participants are rewarded.
 Liquidity providers who hold ALP (or yALP) earn 70% of all trading fees,
-distributed in network base assets and in escrowed AMP tokens. The
+distributed in network base assets and in escrowed AMPED tokens. The
 remaining 30% of protocol fees are set aside in the reward program to
 reward all contribution which is beneficial for the ecosystem, such as
 governance participation and engaging in trades or participating in
 platform campaigns, referral programs. This dual reward system means
 both liquidity providers and other ecosystem participants benefit from
 the platform\'s growth. Additionally, users who stake accumulate esAMP
-(escrowed AMP) which can be staked to provide liquidity, for additional
-rewards or vested into real AMP over time -- incentivizing loyalty and
+(escrowed AMPED) which can be staked to provide liquidity, for additional
+rewards or vested into real AMPED over time -- incentivizing loyalty and
 long-term alignment.
 
 ### **yALP -- Auto-Compounding Yield Vault**
@@ -271,7 +271,7 @@ integration with other protocols.
 
 ### **Governance and Decentralization**
 
-Amped is designed to evolve into a community-governed protocol. The AMP
+Amped is designed to evolve into a community-governed protocol. The AMPED
 token empowers holders with governance rights to propose and vote on
 changes such as adding new assets, adjusting fee parameters, or
 initiating new features. Through a combination of on-chain voting and
@@ -383,84 +383,84 @@ then redepositing those rewards to mint more ALP for the vault. Security
 features include protections like reentrancy guards on state-changing
 functions, and pre-deposit share calculation to prevent manipulation.
 
-## **AMP Token Utility and Governance**
+## **AMPED Token Utility and Governance**
 
-The AMP token is the native governance and utility token of the Amped
-DeFi ecosystem. Modeled after the GMX token in functionality, AMP plays
+The AMPED token is the native governance and utility token of the Amped
+DeFi ecosystem. Modeled after the GMX token in functionality, AMPED plays
 a pivotal role in aligning incentives across traders, liquidity
 providers, and the protocol\'s future development.
 
 ### **Governance Rights**
 
-AMP is fundamentally a governance token, conferring holders the ability
-to influence the direction of the platform. AMP holders can vote on
+AMPED is fundamentally a governance token, conferring holders the ability
+to influence the direction of the platform. AMPED holders can vote on
 proposals or parameter changes, such as adjusting fee distribution
 percentages, onboarding new collateral assets into ALP, modifying
 leverage limits, or initiating partnerships and upgrades. In time, Amped
 plans to transition into a more community-driven DAO structure where
-significant changes are decided through on-chain governance votes by AMP
+significant changes are decided through on-chain governance votes by AMPED
 stakeholders.
 
 ### **Reward Distribution**
 
-One of the primary utilities of AMP is staking. Users can stake their
-AMP tokens in the protocol as a base asset to participate in the
+One of the primary utilities of AMPED is staking. Users can stake their
+AMPED tokens in the protocol as a base asset to participate in the
 platform and provide liquidity to support swaps of digital assets.
-Notably, AMP stakers may also be required to perform a specific task
+Notably, AMPED stakers may also be required to perform a specific task
 within a \'work for service\' model to claim their earned rewards, such
 as such as liquidity provision, governance participation and engaging in
 trades or participating in platform campaigns, referral programs. These
 earned rewards are distributed in the form of:
 
-**Platform Fee Rewards:** AMP stakers receive rewards from the pool that
+**Platform Fee Rewards:** AMPED stakers receive rewards from the pool that
 contains a variety of network base currencies. The rewards pool is
 funded by swap fees, leverage trading fees, and other protocol revenues.
 Essentially, by participating in Amped, one can earn rewards denominated
 in major assets, providing a stream of rewards based on their engagement
 with the platform.
 
-**Escrowed AMP (esAMP):** In addition to immediate fee rewards,
+**Escrowed AMPED (esAMP):** In addition to immediate fee rewards,
 qualifying stakers who have fulfilled engagement criteria are granted
-escrowed AMP tokens (esAMP) as a loyalty reward. esAMP is a
-non-transferable token that represents a claim on real AMP tokens, but
+escrowed AMPED tokens (esAMP) as a loyalty reward. esAMP is a
+non-transferable token that represents a claim on real AMPED tokens, but
 it vests over time. Earning esAMP incentivizes long-term participation:
 users must continue to stake or hold to eventually convert (vest) the
-esAMP into liquid AMP. Alternatively, esAMP itself can be staked to earn
+esAMP into liquid AMPED. Alternatively, esAMP itself can be staked to earn
 additional rewards. This mechanism prevents mercenary behavior by tying
-rewards to time, and gradually increases the circulating supply of AMP
+rewards to time, and gradually increases the circulating supply of AMPED
 in a controlled way.
 
 ### **Liquidity Incentives and ALP Integration**
 
-Liquidity providers (ALP holders) also indirectly benefit from the AMP
+Liquidity providers (ALP holders) also indirectly benefit from the AMPED
 tokenomics. ALP stakers receive a portion of fees and also earn esAMP
 rewards. This means that liquidity providers are being given a stake in
-governance over time, turning them into AMP holders as well. It creates
+governance over time, turning them into AMPED holders as well. It creates
 a pipeline where LPs who might start for the yield eventually become
-vested AMP holders, further aligning LP incentives with the long-term
+vested AMPED holders, further aligning LP incentives with the long-term
 governance and success of Amped.
 
 ### **Utility in the Ecosystem**
 
-Beyond governance and staking, AMP is envisioned to have additional
+Beyond governance and staking, AMPED is envisioned to have additional
 utility within the Amped ecosystem:
 
 **Fee Discounts or Preferred Rates:** The platform may introduce tiered
-benefits for AMP holders, such as reduced trading fees or improved
-referral rates for those holding or staking certain amounts of AMP.
+benefits for AMPED holders, such as reduced trading fees or improved
+referral rates for those holding or staking certain amounts of AMPED.
 
-**Access to Features:** AMP might gate certain advanced features or
+**Access to Features:** AMPED might gate certain advanced features or
 higher platform tiers. For example, participation in special yield
 programs, higher leverage tiers, or early access to new chain
-deployments could be offered to AMP holders.
+deployments could be offered to AMPED holders.
 
-**Collateral or Integration:** As Amped expands, AMP could potentially
+**Collateral or Integration:** As Amped expands, AMPED could potentially
 be used as a collateral asset or integrated into partner protocols. Its
 role as a governance token and claim on fees gives it a fundamental
 value that other protocols may accept.
 
 **Activity Rewards:** Contributors who provide valuable services to the
-Amped Finance ecosystem, who have also staked their AMP on the platform,
+Amped Finance ecosystem, who have also staked their AMPED on the platform,
 may be eligible to receive a share of the platform\'s reward pool
 (funded by fee revenue) as compensation. This mechanism will be
 structured to incentivize active participation and reward valuable
@@ -468,17 +468,17 @@ contributions to the growth and maintenance of the Amped Finance
 platform, for example liquidity provision, governance participation and
 engaging in trades or participating in platform campaigns, referral
 programs, sharing a tweet. We may also explore implementing an
-auto-compounding version of AMP which receives automatically distributed
+auto-compounding version of AMPED which receives automatically distributed
 rewards. Specific criteria and allocation mechanisms for this model will
 be detailed in future governance proposals.
 
 ### **Token Supply and Distribution**
 
-AMP\'s total supply and distribution were determined at launch. A
+AMPED\'s total supply and distribution were determined at launch. A
 portion of supply is allocated to the community and liquidity mining (to
 fund esAMP rewards), a portion to the team/early supporters with
 lockups, and some for treasury or ecosystem growth. The emission of
-esAMP that later vests into AMP means the circulating supply increases
+esAMP that later vests into AMPED means the circulating supply increases
 gradually, but this is balanced by the fact that most rewards start as
 escrowed (non-circulating). The design is such that emissions are
 sustainable relative to the protocol\'s fee generation.
@@ -486,12 +486,12 @@ sustainable relative to the protocol\'s fee generation.
 ### **esAMP and Vesting**
 
 esAMP is an important part of the token\'s utility cycle. When a user
-earns esAMP (through staking AMP or ALP), they face a decision: continue
+earns esAMP (through staking AMPED or ALP), they face a decision: continue
 staking it for yield/additional utilities or begin vesting it to turn
-into AMP. Vesting typically requires locking the esAMP for a fixed
-duration during which the esAMP slowly converts to AMP. This ensures
+into AMPED. Vesting typically requires locking the esAMP for a fixed
+duration during which the esAMP slowly converts to AMPED. This ensures
 that those who receive rewards are committed to the protocol for the
-long haul and prevents an oversupply of AMP hitting the market at once.
+long haul and prevents an oversupply of AMPED hitting the market at once.
 
 ## **AI Enhancements (Future Upgrades)**
 
@@ -585,7 +585,7 @@ improvement, feature expansion, and multi-chain growth.
 **Launch and Foundation:** Amped Finance launched on efficient Layer-2
 networks, introducing its core perpetual and spot trading features.
 Essential features like market and limit orders for swaps, high-leverage
-perpetuals, and staking interfaces for AMP and ALP were activated.
+perpetuals, and staking interfaces for AMPED and ALP were activated.
 
 **Security and Audits:** Comprehensive security audits were completed by
 reputable firms, with any findings addressed before deployment.
